@@ -21,27 +21,26 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      // home: NavigatorDemo(),
-      initialRoute: '/http',
-      routes: {
-        '/': (context) => Home(),
-        '/about': (context) => Page(title: 'About'),
-        '/form': (context) => FormDemo(),
-        '/mdc': (context) => MaterialComponents(),
-        '/state-management': (context) => StateManagementDemo(),
-        '/stream': (context) => StreamDemo(),
-        '/rxdart': (context) => RxDartDemo(),
-        '/bloc': (context) => BlocDemo(),
-        '/http': (context) => HttpDemo(),
-      },
-      theme: ThemeData(
-        primarySwatch: Colors.yellow,
-        highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
-        splashColor: Colors.white70,
-        accentColor:  Color.fromRGBO(3, 54, 255, 1.0),
-      )
-    );
+        debugShowCheckedModeBanner: false,
+        // home: NavigatorDemo(),
+        initialRoute: '/http',
+        routes: {
+          '/': (context) => Home(),
+          '/about': (context) => Page(title: 'About'),
+          '/form': (context) => FormDemo(),
+          '/mdc': (context) => MaterialComponents(),
+          '/state-management': (context) => StateManagementDemo(),
+          '/stream': (context) => StreamDemo(),
+          '/rxdart': (context) => RxDartDemo(),
+          '/bloc': (context) => BlocDemo(),
+          '/http': (context) => HttpDemo(),
+        },
+        theme: ThemeData(
+          primarySwatch: Colors.yellow,
+          highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+          splashColor: Colors.white70,
+          accentColor: Color.fromRGBO(3, 54, 255, 1.0),
+        ));
   }
 }
 
